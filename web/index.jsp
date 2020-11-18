@@ -129,7 +129,7 @@ h1:hover{color:blue;}
    </head>
    <body>
        <sql:setDataSource var = "fuenteDatos" driver = "org.mariadb.jdbc.Driver"
-                           url = "jdbc:mariadb://localhost:3308/biblioteca"
+                           url = "jdbc:mariadb://localhost/biblioteca"
                            user = "root"  password = ""/>
       <br><a id="home" href=insert.jsp><H1>MANTENIMIENTO DE LIBROS</H1></a><br><center><div id="formulario">
       <form action="matto.jsp" method="get" name="Actualizar">
