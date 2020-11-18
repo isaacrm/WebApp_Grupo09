@@ -11,16 +11,13 @@ h1 {
   padding: 10px;
   text-align: center;
   color:black;
-  font-size: 27px;
 }
 
 h1:hover{color:white;}
 
-.form {
-  
-  background-color: #4F71E1;
-  border: black 1px solid;
-}
+h2{
+  color:black;
+  text-align: center;}
 
 body{
   background-color: #BCBECF;
@@ -71,18 +68,6 @@ body{
   color:black;
   cursor:pointer;}
 
-#tabla{
-  background-color: #9DA9F4;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  display: inline-flex;
-  color:black;}
-
-#tabla td{
-padding:1%;
-border:black 0.5 solid;}
-
 a{color:black;}
 
 a:hover{
@@ -94,9 +79,5 @@ a:hover{
   display:block;
   top:1%;
   color:black;}
-
-h2{
-  color:black;
-  text-align: center;}
 
 */
