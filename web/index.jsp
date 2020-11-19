@@ -117,7 +117,7 @@
                         <td><c:out value = "${row.autor}"/></td>
                         <td>
                             <a id="actualizate" href="frmupdate.jsp?isbn=${row.isbn}&titulo=${row.titulo}&editorial=${row.editorial}&fecha=${row.fecha}&autor=${row.autor}" class="btn btn-warning">Actualizar</a>
-                            <br><a id="eliminate" href="delete.jsp?Action=Eliminar&isbn=${row.isbn}&boton_A=ACEPTAR" class="btn btn-danger" >Eliminar</a>
+                            <br><a id="eliminate" onclick="eliminar('${row.isbn}')" class="btn btn-danger" >Eliminar</a>
                         </td>
                     </tr>
                     </c:forEach>

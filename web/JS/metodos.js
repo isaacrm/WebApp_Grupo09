@@ -3,7 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+        function eliminar(isbn)
+        {
+            var confirmar;
+            confirmar = confirm("Estás seguro que deseas eliminar " + isbn + " del registro?");
+            if (confirmar){
+            location.href = "delete.jsp?isbn=" + isbn;
+            }
+        }
+      /*INICIO PAGINACION*/
        $(document).ready(function() {
             $('#tabla').DataTable({
                 sDom: 'lrtip',
@@ -39,3 +47,4 @@
                 "colvis": "Visibilidad"
             }
         }
+      /*FIN PAGINACION*/
