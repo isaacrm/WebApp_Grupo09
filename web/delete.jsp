@@ -36,40 +36,40 @@
         </div>
         <!--Inicio de tabla original mostrando registro eliminado-->
         <div class="container p-3 my-3 bg-light text-dark border" id="tablaOriginal">
-           <div class="table-responsive">
+            <div class="table-responsive">
                 <legend class="text-center header">
                     <h2>Listado de libros anterior</h2>
                 </legend>
                 <table class="table" id="tabla">
-                <sql:query dataSource = "${fuenteDatos}" var = "result">
-                    SELECT * from libro;
-                </sql:query>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">ISBN</th>
-                      <th scope="col">Titulo</th>
-                      <th scope="col">Editorial</th>
-                      <th scope="col">Fecha de Publicación</th>
-                      <th scope="col">Autor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <c:forEach var = "row" items = "${result.rows}">
-                    <tr class="table-hover fila${row.isbn}">
-                        <th scope="row">
-                        <c:out value = "${row.Id}"/>
-                        </th>
-                        <td><c:out value = "${row.isbn}"/>
-                        </td>
-                        <td><c:out value = "${row.titulo}"/></td>
-                        <td><c:out value = "${row.editorial}"/>
-                        </td>
-                        <td><c:out value = "${row.fecha}"/></td>
-                        <td><c:out value = "${row.autor}"/></td>
-                    </tr>
-                    </c:forEach>
-                  </tbody>
+                    <sql:query dataSource = "${fuenteDatos}" var = "result">
+                        SELECT * from libro;
+                    </sql:query>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">ISBN</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Editorial</th>
+                            <th scope="col">Fecha de Publicación</th>
+                            <th scope="col">Autor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach var = "row" items = "${result.rows}">
+                            <tr class="table-hover fila${row.isbn}">
+                                <th scope="row">
+                                    <c:out value = "${row.Id}"/>
+                                </th>
+                                <td><c:out value = "${row.isbn}"/>
+                                </td>
+                                <td><c:out value = "${row.titulo}"/></td>
+                                <td><c:out value = "${row.editorial}"/>
+                                </td>
+                                <td><c:out value = "${row.fecha}"/></td>
+                                <td><c:out value = "${row.autor}"/></td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -82,40 +82,40 @@
         <!--Fin de consulta para eliminar registro de BD-->
         <!--Inicio de tabla actualizada-->
         <div class="container p-3 my-3 bg-light text-dark border" id="tablaModificada">
-           <div class="table-responsive">
+            <div class="table-responsive">
                 <legend class="text-center header">
                     <h2>Listado de libros actualizado</h2>
                 </legend>
                 <table class="table" id="tabla">
-                <sql:query dataSource = "${fuenteDatos}" var = "result">
-                    SELECT * from libro;
-                </sql:query>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">ISBN</th>
-                      <th scope="col">Titulo</th>
-                      <th scope="col">Editorial</th>
-                      <th scope="col">Fecha de Publicación</th>
-                      <th scope="col">Autor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <c:forEach var = "row" items = "${result.rows}">
-                    <tr class="table-hover">
-                        <th scope="row">
-                        <c:out value = "${row.Id}"/>
-                        </th>
-                        <td><c:out value = "${row.isbn}"/>
-                        </td>
-                        <td><c:out value = "${row.titulo}"/></td>
-                        <td><c:out value = "${row.editorial}"/>
-                        </td>
-                        <td><c:out value = "${row.fecha}"/></td>
-                        <td><c:out value = "${row.autor}"/></td>
-                    </tr>
-                    </c:forEach>
-                  </tbody>
+                    <sql:query dataSource = "${fuenteDatos}" var = "result">
+                        SELECT * from libro;
+                    </sql:query>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">ISBN</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Editorial</th>
+                            <th scope="col">Fecha de Publicación</th>
+                            <th scope="col">Autor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach var = "row" items = "${result.rows}">
+                            <tr class="table-hover">
+                                <th scope="row">
+                                    <c:out value = "${row.Id}"/>
+                                </th>
+                                <td><c:out value = "${row.isbn}"/>
+                                </td>
+                                <td><c:out value = "${row.titulo}"/></td>
+                                <td><c:out value = "${row.editorial}"/>
+                                </td>
+                                <td><c:out value = "${row.fecha}"/></td>
+                                <td><c:out value = "${row.autor}"/></td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
                 </table>
                 <h3><a href="index.jsp" style="font-size:1cm;color:blue;">REGRESAR</a></h3>
             </div>
